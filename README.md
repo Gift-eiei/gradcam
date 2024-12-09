@@ -46,9 +46,13 @@ img_resize = cv2.resize(output_image, (1400,800))
 - CLASS_INDEX : An index determines the fracture class name of mandible bones
 
 **Input Example**
-
+```img = cv2.imread(r'PATH OF THE IMAGE',0)
+plt.imshow(img)
+```
 ![img.png](figure/input_image.png)
 
 **Output Example**
-
+```
+plt.imshow(img_resize)
+```
 ![img_1.png](figure/output_image.png)
