@@ -11,7 +11,7 @@ Input: Original X-ray image of mandible bones
 
 Output: The highlighted X-ray image with heatmap indicating the location of fracture
 
-```
+```python
 grad_model = tf.keras.models.Model([model.inputs], [model.get_layer('bn').output, model.output])
 
 with tf.GradientTape() as tape:
@@ -46,13 +46,14 @@ img_resize = cv2.resize(output_image, (1400,800))
 - CLASS_INDEX : An index determines the fracture class name of mandible bones
 
 **Input Example**
-```img = cv2.imread(r'PATH OF THE IMAGE',0)
+```python
+img = cv2.imread(r'PATH OF THE IMAGE',0)
 plt.imshow(img)
 ```
 ![img.png](figure/input_image.png)
 
 **Output Example**
-```
+```python
 plt.imshow(img_resize)
 ```
 ![img_1.png](figure/output_image.png)
