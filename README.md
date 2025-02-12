@@ -1,9 +1,11 @@
-# GradCam (Gradient-weighted Class Activation Mapping)
-
-
+<h1 align="center"> GradCam </h1>
+<p align="center">
 Gradient-weighted Class Activation Mapping (Grad-CAM) is a technique for visualizing the important regions in an image that contribute to the prediction of a convolutional neural network. It uses the gradients of the target class flowing into the final convolutional layer to generate a coarse localization map. 
+</p>
 
-
+<div align="center">
+  <img alt="Tensorflow" src="https://img.shields.io/badge/-Tensorflow-orange?style=flat&logo=Tensorflow&logoColor=white">
+</div>
 
 # Apply GradCAM technique on input images
 
