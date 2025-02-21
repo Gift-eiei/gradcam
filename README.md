@@ -9,9 +9,9 @@ Gradient-weighted Class Activation Mapping (Grad-CAM) is a technique for visuali
 
 # Apply GradCAM technique on input images
 
-Input: Original X-ray image of mandible bones
+**Input**: Original X-ray image of mandible bones
 
-Output: The highlighted X-ray image with heatmap indicating the location of fracture
+**Output**: The highlighted X-ray image with heatmap indicating the location of the fracture
 
 ```python
 grad_model = tf.keras.models.Model([model.inputs], [model.get_layer('bn').output, model.output])
